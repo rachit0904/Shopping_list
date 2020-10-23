@@ -57,7 +57,7 @@ public class Homepage extends AppCompatActivity implements AdapterView.OnItemSel
         itemName=(EditText) view.findViewById(R.id.groceryItem);
         itemQty=(Spinner) view.findViewById(R.id.groceryQty);
         itemUnit=(EditText) view.findViewById(R.id.groceryUnit);
-        saveBtn=(Button) view.findViewById(R.id.saveButton);;
+        saveBtn=(Button) view.findViewById(R.id.saveButton);
         builder.setView(view);
         dialog=builder.create();
         dialog.show();

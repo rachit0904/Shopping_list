@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tile"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Add to list!"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/groceryItem"
+                android:layout_below="@id/tile"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:hint="Item name"
+                android:layout_height="wrap_content" />
+            <TableRow
+                android:id="@+id/table"
+                android:layout_below="@id/groceryItem"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/groceryUnit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/groceryQty"
+                    android:layout_below="@id/groceryItem"
+                    android:layout_marginTop="4dp"
+                    android:hint="quantity"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            <Spinner
+                android:id="@+id/groceryQty"
+                android:layout_width="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/groceryItem"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            </TableRow>
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/table"
+                android:text="Done"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -89,13 +89,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     int position = getAdapterPosition();
                     Grocery grocery = groceryList.get(position);
                     editItem(grocery);
-
                     break;
                 case R.id.deleteButton:
                     position = getAdapterPosition();
                     grocery = groceryList.get(position);
                     deleteItem(grocery.getId());
                     break;
+                default:
+                    Log.i("info","invalid input");
             }
         }
 
